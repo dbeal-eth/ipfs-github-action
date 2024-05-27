@@ -37,7 +37,7 @@ update_github_status "pending" "Pinnning to IPFS cluster" "https://$INPUT_IPFS_G
 root_cid=$(ipfs-cluster-ctl \
     --host "$INPUT_CLUSTER_HOST" \
     --basic-auth "$INPUT_CLUSTER_USER:$INPUT_CLUSTER_PASSWORD" \
-    --no-check-certificate
+    --no-check-certificate \
     add \
     --quieter \
     --local \
