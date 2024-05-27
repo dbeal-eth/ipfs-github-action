@@ -1,4 +1,4 @@
-FROM --platform=${BUILDPLATFORM:-linux/amd64} golang:1.20-bullseye AS builder
+FROM --platform=${BUILDPLATFORM:-linux/amd64} golang:1.22-bullseye AS builder
 MAINTAINER olizilla <oli@protocol.ai>
 
 ARG TARGETPLATFORM TARGETOS TARGETARCH
