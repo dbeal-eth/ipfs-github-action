@@ -17,7 +17,7 @@ FROM alpine:3.18
 
 ENV GOPATH /go
 
-RUN apk add --no-cache gcompat bash ca-certificates
+RUN apk add --no-cache gcompat bash ca-certificates jq
 
 COPY --from=builder $GOPATH/bin/dnslink-dnsimple /usr/local/bin/dnslink-dnsimple
 COPY --from=builder $GOPATH/bin/ipfs-cluster-ctl /usr/local/bin/ipfs-cluster-ctl
